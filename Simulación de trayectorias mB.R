@@ -24,8 +24,8 @@ TrayectoriasmB(10,365,0.01)
 
 
 #m:= número de trayectorias, t:= longitud  
-#dt:= incremento, s_0:= precio inicial del activo
-#mu:= rendimiento medio, sigma:= volatilidad
+#dt:= incremento, s_0:= precio inicial conocido del activo
+#mu:= tendencia, sigma:= volatilidad>=0
 DatosmBg<-function(m,t,dt,s_0,mu,sigma){
   Particion<-seq(0,t,dt)
   TotalParticion<-length(Particion)
